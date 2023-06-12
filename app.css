@@ -1,0 +1,324 @@
+body {
+    background-color: #070724 !important;
+    background: url('/assets/images/background-stars.svg');
+    height: 100vh;
+}
+
+/* text */
+
+h1 {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 80px;
+    line-height: 104px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h2 {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h4 {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.7;
+}
+
+/* buttons and links */
+.btn-primary-custom {
+    border: #d8d8d858 solid 1px;
+    background: transparent;
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 0.7rem;
+    transition: 0.25s;
+}
+
+.btn-primary-custom:hover {
+    background: #38384F;
+}
+
+.btn-primary-custom span {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 2.57143px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+a {
+    color: #ffffffc0 !important;
+}
+
+.active-mercury {
+    background-color: #419EBB;
+}
+
+.active-venus {
+    background-color: #EDA249;
+}
+
+.active-earth {
+    background-color: #6f2ed6;
+}
+
+.active-mars {
+    background-color: #D14C32;
+}
+
+.active-jupiter {
+    background-color: #D83A34;
+}
+
+.active-saturn {
+    background-color: #CD5120;
+}
+
+.active-uranus {
+    background-color: #1ec2a4;
+}
+
+.active-neptune {
+    background-color: #2d68f0;
+}
+
+/* navbar */
+
+nav {
+    border-bottom: #d8d8d858 solid 1px;
+}
+
+.nav-link {
+    font-family: 'League Spartan', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 25px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffffae !important;
+}
+
+.nav-link:hover {
+    color: #fff !important;
+    border-top: #419EBB solid 2px;
+}
+
+.navbar-brand {
+    font-family: 'Antonio', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px !important;
+    line-height: 36px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.nav-active-mercury {
+    color: #fff !important;
+    border-top: #419EBB solid 2px;
+}
+
+.nav-active-venus {
+    color: #fff !important;
+    border-top: #EDA249 solid 2px;
+}
+
+.nav-active-earth {
+    color: #fff !important;
+    border-top: #6f2ed6 solid 2px;
+}
+
+.nav-active-mars {
+    color: #fff !important;
+    border-top: #D14C32 solid 2px;
+}
+
+.nav-active-jupiter {
+    color: #fff !important;
+    border-top: #D83A34 solid 2px;
+}
+
+.nav-active-saturn {
+    color: #fff !important;
+    border-top: #CD5120 solid 2px;
+}
+
+.nav-active-uranus {
+    color: #fff !important;
+    border-top: #1ec2a4 solid 2px;
+}
+
+.nav-active-neptune {
+    color: #fff !important;
+    border-top: #2d68f0 solid 2px;
+}
+
+
+.navbar-toggler {
+    border: none !important;
+}
+
+.navbar-toggler-icon {
+    background-image: none !important;
+    height: 3px;
+    width: 3px;
+    margin: 10px 0;
+    position: relative;
+    transition: all 0.35s ease-out;
+    transform-origin: center;
+}
+
+.navbar-toggler-icon::before {
+    display: block;
+    height: 3px;
+    content: "";
+    position: relative;
+    top: -7px;
+    transition: all 0.15s ease-out;
+    transform-origin: center;
+}
+
+.navbar-toggler-icon::after {
+    display: block;
+    height: 3px;
+    content: "";
+    position: relative;
+    transition: all 0.35s ease-out;
+    transform-origin: center;
+}
+
+.navbar-dark .navbar-toggler-icon,
+.navbar-dark .navbar-toggler-icon::before,
+.navbar-dark .navbar-toggler-icon::after {
+    background-color: #fff;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon {
+    transform: rotate(45deg);
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::before {
+    opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) .navbar-toggler-icon::after {
+    transform: rotate(-90deg) translateX(7px);
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+/* content */
+
+.stats {
+    border: #d8d8d858 solid 1px;
+}
+
+@media (min-width:1000px) {
+    .btn-primary-custom {
+        width: 400px !important;
+    }
+
+    #geo-img {
+        left: 465px;
+        top: 380px;
+    }
+
+    .info {
+        height: 33vh;
+    }
+
+    .jupiter img {
+        max-width: 450px;
+    }
+
+    .Saturn img {
+        max-width: 450px;
+    }
+
+    .Uranus img {
+        max-width: 400px;
+    }
+
+    .Neptune img {
+        max-width: 400px;
+    }
+}
+
+@media (max-width:500px) {
+    .btn-primary-custom {
+        border: none;
+    }
+
+    .btn-group-mobile {
+        border-top: #d8d8d858 solid 1px;
+        border-bottom: #d8d8d858 solid 1px;
+    }
+
+    #geo-img {
+        left: 135px;
+        top: 300px;
+    }
+}
+
+@media (min-width:600px) {
+    .btn-group-mobile {
+        display: none;
+    }
+
+    .btn-primary-custom {
+        width: 300px;
+    }
+}
